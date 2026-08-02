@@ -1,0 +1,9 @@
+evaluation:
+  mc_dropout_samples: 30
+  ece_bins: 15
+  significance_test: wilcoxon
+  metrics: [macro_auc, accuracy, f1_macro, c_index, brier_score]
+  baselines_to_compare:
+    - late_fusion_concat
+    - single_modality_ct
+    - single_modality_histo
